@@ -1,0 +1,339 @@
+.menuarriba {
+    background-color: rgb(248, 248, 248);
+    height: 60px;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos cuando se hace scroll */
+.menuarriba.scrolled {
+    background-color: rgba(239, 239, 239, 0.5); /* Más translúcido */
+    backdrop-filter: blur(10px); /* Efecto borroso */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.palabrasmenu {
+    color: #000000;
+    font-size: 18px;
+    padding: 20px;
+}
+
+body {
+    padding-top: 70px;
+}
+
+
+.imagenmia{
+    height: 190px;
+    width: 170px;
+    border-radius: 50%;
+}
+
+.saludo{
+    font-size: 50px;
+    color: #000000;
+}
+
+.imagensaludo{
+    height: 70px;
+    width: 70px;
+}
+
+
+.textopresentacion{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.palabraproyectos{
+    color: #000000;
+    font-size: 40px;
+}
+
+.sobremi{
+    color: #000000;
+    font-size: 40px;
+}
+
+.textosobremi{
+    color: #292929;
+    font-size: 15px;
+}
+
+
+
+/* animacion pepitas */
+
+
+/* From Uiverse.io by G4b413l */ 
+.newtons-cradle {
+    --uib-size: 50px;
+    --uib-speed: 1.2s;
+    --uib-color: #474554;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--uib-size);
+    height: var(--uib-size);
+   }
+   
+   .newtons-cradle__dot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    transform-origin: center top;
+   }
+   
+   .newtons-cradle__dot::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 25%;
+    border-radius: 50%;
+    background-color: var(--uib-color);
+   }
+   
+   .newtons-cradle__dot:first-child {
+    animation: swing var(--uib-speed) linear infinite;
+   }
+   
+   .newtons-cradle__dot:last-child {
+    animation: swing2 var(--uib-speed) linear infinite;
+   }
+   
+   @keyframes swing {
+    0% {
+     transform: rotate(0deg);
+     animation-timing-function: ease-out;
+    }
+   
+    25% {
+     transform: rotate(70deg);
+     animation-timing-function: ease-in;
+    }
+   
+    50% {
+     transform: rotate(0deg);
+     animation-timing-function: linear;
+    }
+   }
+   
+   @keyframes swing2 {
+    0% {
+     transform: rotate(0deg);
+     animation-timing-function: linear;
+    }
+   
+    50% {
+     transform: rotate(0deg);
+     animation-timing-function: ease-out;
+    }
+   
+    75% {
+     transform: rotate(-70deg);
+     animation-timing-function: ease-in;
+    }
+   }
+
+
+.quiensoy{
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+
+
+   /* From Uiverse.io by vinodjangid07 */ 
+.card1 {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #000000;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #000000;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .juntarbotones {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Alinea los botones verticalmente */
+}
+
+.juntarbotones a {
+    white-space: nowrap; /* Evita que el texto dentro de los botones se divida */
+}
+
+
+.anchodecolum{
+    width: 50%;
+}
+
+
+    .card{
+        width: 22rem;
+    }
+
+
+
+  @media screen and (max-width: 431px) {
+
+    .card{
+        width: 15rem;
+    }
+
+
+    .juntarbotones {
+        display: flex;
+        gap: 10px; /* Espacio entre los botones */
+        justify-content: center; /* Centra los botones horizontalmente */
+        align-items: center; /* Alinea los botones verticalmente */
+    }
+    
+    .juntarbotones a {
+        white-space: nowrap; /* Evita que el texto dentro de los botones se divida */
+        width: 85px;
+        font-size: 11px;
+    }
+
+
+
+
+
+    .quiensoy{
+        font-size: 14px;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .anchodecolum{
+        width: 100%;
+    }
+
+    .menuarriba {
+        background-color: rgb(248, 248, 248);
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .palabrasmenu {
+        white-space: nowrap;
+        color: #000000;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+
+    .saludo{
+        font-size: 30px;
+        color: #000000;
+    }
+
+    .imagensaludo{
+        height: 45px;
+        width: 45px;
+    }
+
+
+    .palabraproyectos{
+        color: #000000;
+        font-size: 30px;
+    }
+    
+    .sobremi{
+        color: #000000;
+        font-size: 30px;
+    }
+
+    .textopresentacion{
+        font-size: 14px;
+        color: #000000;
+        font-weight: 500;
+    }
+
+
+  }
+  
