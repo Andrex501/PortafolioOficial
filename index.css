@@ -143,6 +143,11 @@ body {
     color: #000000;
 }
 
+#tecno {
+    height: 400px;
+}
+
+
 .quiensoy {
     font-size: 20px;
     text-align: left;
@@ -305,6 +310,10 @@ body {
         width: 45px;
         height: 45px;
     }
+
+    #tecno {
+    height: 200px;
+}
 }
 
 @media (max-width: 576px) {
@@ -315,6 +324,10 @@ body {
         width: 40px;
         height: 40px;
     }
+
+    #tecno {
+    height: 200px;
+}
 }
 
 /* RESPONSIVIDAD GENERAL */
@@ -322,6 +335,10 @@ body {
     .card {
         width: 11rem;
     }
+ 
+#tecno {
+    height: 200px;
+}
 
     .juntarbotones {
         display: flex;
