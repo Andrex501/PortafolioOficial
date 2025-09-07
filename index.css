@@ -138,6 +138,10 @@ body {
 .card-title{
     color: #ffffff;
 }
+.card-title2{
+    font-weight: 800;
+    color: #000000;
+}
 
 .quiensoy {
     font-size: 20px;
