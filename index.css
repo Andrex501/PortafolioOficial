@@ -273,6 +273,7 @@ body {
 .icono-levitante {
     animation: levitar 2.5s ease-in-out infinite;
      box-shadow: 0 8px 20px #D08BF1;
+     border-radius: 10px;
 }
 
 @keyframes levitar {
