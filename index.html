@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -43,7 +44,7 @@
     <header class="site-header">
       <nav class="top-nav glass" aria-label="Navegación principal">
         <a class="brand" href="#inicio" aria-label="Ir al inicio">
-          <img src="./recursos/programacion.png" alt="Logo" />
+          <img src="./recursos/programacion.png" alt="Logo" width="32" height="32" />
           <span>AndreSoft</span>
         </a>
 
@@ -132,20 +133,20 @@
               >
                 <i class="bi bi-whatsapp"></i>
               </a>
-
-        
-               
-              </a>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="hero-card glass reveal">
               <div class="hero-card-top">
+                <!-- OPTIMIZADO: Prioridad alta para tu avatar principal (LCP) -->
                 <img
                   class="avatar"
                   src="./recursos/mifoto2.png"
                   alt="Foto de Andres"
+                  fetchpriority="high"
+                  width="150"
+                  height="150"
                 />
                 <div class="hero-mini">
                   <p class="mini-title">Perfil</p>
@@ -210,7 +211,8 @@
           <div class="col-md-6 col-xl-4">
             <article class="project-card glass reveal">
               <div class="project-thumb">
-                <img src="./recursos/water.png" alt="Proyecto Empresa de agua" />
+                <!-- OPTIMIZADO: Carga perezosa y dimensiones -->
+                <img src="./recursos/water.png" alt="Proyecto Empresa de agua" loading="lazy" width="380" height="240" />
                 <span class="project-badge">Web</span>
               </div>
 
@@ -258,7 +260,8 @@
           <div class="col-md-6 col-xl-4">
             <article class="project-card glass reveal">
               <div class="project-thumb">
-                <img src="./recursos/pacientes.png" alt="Proyecto Formulario Veterinaria" />
+                <!-- OPTIMIZADO: Carga perezosa y dimensiones -->
+                <img src="./recursos/pacientes.png" alt="Proyecto Formulario Veterinaria" loading="lazy" width="380" height="240" />
                 <span class="project-badge">React</span>
               </div>
 
@@ -305,7 +308,8 @@
           <div class="col-md-6 col-xl-4">
             <article class="project-card glass reveal">
               <div class="project-thumb">
-                <img src="./recursos/guitars.png" alt="Proyecto Tienda de guitarras" />
+                <!-- OPTIMIZADO: Carga perezosa y dimensiones -->
+                <img src="./recursos/guitars.png" alt="Proyecto Tienda de guitarras" loading="lazy" width="380" height="240" />
                 <span class="project-badge">E-commerce</span>
               </div>
 
@@ -352,7 +356,8 @@
           <div class="col-md-6 col-xl-4">
             <article class="project-card glass reveal">
               <div class="project-thumb">
-                <img src="./recursos/colors.png" alt="Proyecto Clima y Tiempo" />
+                <!-- OPTIMIZADO: Carga perezosa y dimensiones -->
+                <img src="./recursos/colors.png" alt="Proyecto Clima y Tiempo" loading="lazy" width="380" height="240" />
                 <span class="project-badge">WEB</span>
               </div>
 
@@ -367,7 +372,7 @@
                   <span class="chip chip-soft">Html</span>
                   <span class="chip chip-soft">Css</span>
                 </div>
- 
+
                 <ul class="project-bullets">
                   <li><i class="bi bi-cloud-sun"></i>Paleta colores</li>
                   <li><i class="bi bi-speedometer"></i> UI rápida</li>
@@ -472,7 +477,7 @@
             <div class="glass about-card reveal">
               <h3 class="about-title">Resumen rápido</h3>
               <p class="about-text">
-                Soy desarrollador con experiencia construyendo interfaces modernas y funcionalidades reales.
+                Soy desarrollador con experience construyendo interfaces modernas y funcionalidades reales.
                 Me adapto rápido, soy detallista y busco que el resultado se vea profesional y sólido.
               </p>
 
@@ -507,49 +512,49 @@
               <h3 class="tech-title">Tecnologías que he utilizado</h3>
 
               <div class="tech-grid" role="list">
-                <!-- Reusa tus imágenes -->
+                <!-- OPTIMIZADO: Lazy-loading y dimensiones para tus iconos de tecnologías -->
                 <div class="tech-item" role="listitem" title="HTML">
-                  <img src="./recursos/html.png" alt="HTML" />
+                  <img src="./recursos/html.png" alt="HTML" loading="lazy" width="48" height="48" />
                   <span>HTML</span>
                 </div>
                 <div class="tech-item" role="listitem" title="CSS">
-                  <img src="./recursos/css.png" alt="CSS" />
+                  <img src="./recursos/css.png" alt="CSS" loading="lazy" width="48" height="48" />
                   <span>CSS</span>
                 </div>
                 <div class="tech-item" role="listitem" title="JavaScript">
-                  <img src="./recursos/js.png" alt="JavaScript" />
+                  <img src="./recursos/js.png" alt="JavaScript" loading="lazy" width="48" height="48" />
                   <span>JavaScript</span>
                 </div>
                 <div class="tech-item" role="listitem" title="MongoDB">
-                  <img src="./recursos/mongo.png" alt="MongoDB" />
+                  <img src="./recursos/mongo.png" alt="MongoDB" loading="lazy" width="48" height="48" />
                   <span>MongoDB</span>
                 </div>
                 <div class="tech-item" role="listitem" title="Bootstrap">
-                  <img src="./recursos/bootstrap.png" alt="Bootstrap" />
+                  <img src="./recursos/bootstrap.png" alt="Bootstrap" loading="lazy" width="48" height="48" />
                   <span>Bootstrap</span>
                 </div>
                 <div class="tech-item" role="listitem" title="MySQL">
-                  <img src="./recursos/mysql.png" alt="MySQL" />
+                  <img src="./recursos/mysql.png" alt="MySQL" loading="lazy" width="48" height="48" />
                   <span>MySQL</span>
                 </div>
                 <div class="tech-item" role="listitem" title="NodeJS">
-                  <img src="./recursos/node.png" alt="NodeJS" />
+                  <img src="./recursos/node.png" alt="NodeJS" loading="lazy" width="48" height="48" />
                   <span>Node</span>
                 </div>
                 <div class="tech-item" role="listitem" title="PHP">
-                  <img src="./recursos/php.png" alt="PHP" />
+                  <img src="./recursos/php.png" alt="PHP" loading="lazy" width="48" height="48" />
                   <span>PHP</span>
                 </div>
                 <div class="tech-item" role="listitem" title="React">
-                  <img src="./recursos/react.png" alt="React" />
+                  <img src="./recursos/react.png" alt="React" loading="lazy" width="48" height="48" />
                   <span>React</span>
                 </div>
                 <div class="tech-item" role="listitem" title="Vue">
-                  <img src="./recursos/vue.png" alt="Vue" />
+                  <img src="./recursos/vue.png" alt="Vue" loading="lazy" width="48" height="48" />
                   <span>Vue</span>
                 </div>
                 <div class="tech-item" role="listitem" title="Tailwind">
-                  <img src="./recursos/tailwind.png" alt="Tailwind" />
+                  <img src="./recursos/tailwind.png" alt="Tailwind" loading="lazy" width="48" height="48" />
                   <span>Tailwind</span>
                 </div>
               </div>
@@ -577,7 +582,8 @@
         <div class="row g-4">
           <div class="col-md-6 col-lg-3">
             <button class="cert-card glass reveal" data-cert="./recursos/tecnologo.png" aria-label="Ver certificado tecnólogo">
-              <img src="./recursos/tecnologo.png" alt="Tecnólogo en ADSO" />
+              <!-- OPTIMIZADO: Lazy-loading y dimensiones para certificados -->
+              <img src="./recursos/tecnologo.png" alt="Tecnólogo en ADSO" loading="lazy" width="260" height="180" />
               <div class="cert-body">
                 <p class="cert-title">Tecnólogo en ADSO</p>
                 <p class="cert-sub">Formación</p>
@@ -587,7 +593,8 @@
 
           <div class="col-md-6 col-lg-3">
             <button class="cert-card glass reveal" data-cert="./recursos/reconocimiento.png" aria-label="Ver reconocimiento">
-              <img src="./recursos/reconocimiento.png" alt="Reconocimiento por rendimiento" />
+              <!-- OPTIMIZADO: Lazy-loading y dimensiones para certificados -->
+              <img src="./recursos/reconocimiento.png" alt="Reconocimiento por rendimiento" loading="lazy" width="260" height="180" />
               <div class="cert-body">
                 <p class="cert-title">Reconocimiento</p>
                 <p class="cert-sub">Rendimiento</p>
@@ -597,7 +604,8 @@
 
           <div class="col-md-6 col-lg-3">
             <button class="cert-card glass reveal" data-cert="./recursos/remoto.png" aria-label="Ver certificado trabajo remoto">
-              <img src="./recursos/remoto.png" alt="Certificado trabajo remoto" />
+              <!-- OPTIMIZADO: Lazy-loading y dimensiones para certificados -->
+              <img src="./recursos/remoto.png" alt="Certificado trabajo remoto" loading="lazy" width="260" height="180" />
               <div class="cert-body">
                 <p class="cert-title">Trabajo remoto</p>
                 <p class="cert-sub">Certificado</p>
@@ -607,7 +615,8 @@
 
           <div class="col-md-6 col-lg-3">
             <button class="cert-card glass reveal" data-cert="./recursos/javascript.png" aria-label="Ver certificado JavaScript">
-              <img src="./recursos/javascript.png" alt="Certificado JavaScript" />
+              <!-- OPTIMIZADO: Lazy-loading y dimensiones para certificados -->
+              <img src="./recursos/javascript.png" alt="Certificado JavaScript" loading="lazy" width="260" height="180" />
               <div class="cert-body">
                 <p class="cert-title">JavaScript</p>
                 <p class="cert-sub">Especial</p>
@@ -629,7 +638,7 @@
             </p>
 
             <div class="contact-items">
-              <a class="contact-item" href="mailto:andres@example.com">
+              <a class="contact-item" href="mailto:nithson.barragan.03@gmail.com">
                 <i class="bi bi-envelope"></i>
                 <span>nithson.barragan.03@gmail.com</span>
               </a>

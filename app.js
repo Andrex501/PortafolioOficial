@@ -135,6 +135,19 @@ if (certModal) {
   });
 }
 
+
+// Evita que el canvas consuma recursos de CPU en pantallas móviles menores a 768px
+if (window.innerWidth >= 768) {
+    // Aquí inicializas tu librería de partículas (ej. particlesJS, tsParticles, etc.)
+    particlesJS.load('particles', './recursos/particles.json', function() {
+        console.log('Partículas cargadas en escritorio.');
+    });
+} else {
+    // Opcional: Oculta el contenedor del canvas por completo en móvil
+    document.getElementById('particles').style.display = 'none';
+}
+
+
 // ---------- Lightweight particles (no libs) ----------
 const canvas = document.getElementById("particles");
 if (canvas) {
